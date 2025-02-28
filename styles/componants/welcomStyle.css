@@ -27,11 +27,8 @@ header .mode{
     display: flex;
     justify-content:space-around;
     align-items: center;
-  
-    margin-top: 100px;
-    padding: auto;
-   
-   
+    margin-top:20px;
+    padding: auto;   
 }
 .hero-section image{
     width:100%;
@@ -56,7 +53,7 @@ header .mode{
 }
 
 .hero .cta-btn{
-    background-color: green;
+    background-color: #185403;
     width: 150px;
     padding: 10px 15px;
     border: 1px solid #eee;
@@ -66,7 +63,7 @@ header .mode{
     border-radius: 8px;
 }
 .hero .cta-btn:hover{
-    background-color: #4f8b37;
+    background-color: #7cdf3f
 }
 .hero-section img{
     width: 334px;
