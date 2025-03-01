@@ -21,10 +21,34 @@
   margin: auto;
   padding-inline: 0.5rem;
 }
+/* sm */
+@media (max-width: 640px) {
+  .hero{
+    flex-wrap: wrap;
+    width: 100%;
+  } 
+  .hero img{
+    width:100%;
+  }
+  .main-section .hero-section h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px;
+
+}
+.main-section .hero-section p{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+}
+.main-section .hero-section img{
+  max-width:400px;
+}
+}
 /* xs */
 @media (max-width: 475px) {
-  .hero-section{
-    flex-direction: column;
+  .hero{
+    flex-wrap: wrap;
     padding-bottom: 10px;
     margin-top: 20px;
   }

@@ -1,15 +1,15 @@
 
-.hero-section{
+.hero{
     display: flex;
     justify-content:space-around;
     align-items: center;
     margin-top:20px;
     padding: auto;   
 }
-.hero-section image{
+.hero image{
     width:100%;
 }
-.hero{
+.hero-des{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -17,21 +17,23 @@
     padding:30px 20px ;
     
 }
-.hero h1{
+.hero-des h1{
     font-size: 3rem;
     line-height: 3.3rem;
     font-weight: 500;
 }
-.hero p{
+.hero-des p{
     font-size: 1.125rem;
     line-height: 2rem;
     font-weight: 400;
 }
 
-.hero .cta-btn:hover{
+.hero-des .cta-btn:hover{
     background-color: #7cdf3f
 }
-.hero-section img{
+.hero img{
     width: 334px;
-    height: 261;
+    height: 261px;
+    border: 3px solid #185403;
+    border-radius: 8px;
 }
