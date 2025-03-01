@@ -1,28 +1,4 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-header .logo{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    gap: 3px;
-}
-header .logo img{
-    height: 20%;
-    max-width:10%;
-    border-radius: 50%;
-}
-header .logo h1{
-    font-size: 1.5rem;
-    line-height: 11px;
-}
-header .mode{
-    padding-right: 20px;
-    font-size: 1.5rem;
-}
+
 .hero-section{
     display: flex;
     justify-content:space-around;
@@ -52,16 +28,6 @@ header .mode{
     font-weight: 400;
 }
 
-.hero .cta-btn{
-    background-color: #185403;
-    width: 150px;
-    padding: 10px 15px;
-    border: 1px solid #eee;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 8px;
-}
 .hero .cta-btn:hover{
     background-color: #7cdf3f
 }

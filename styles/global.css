@@ -23,3 +23,15 @@ body.dark-mode{
     border: none;
    
   }
+  .cta-btn{
+    background-color: #185403;
+    width: 150px;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
