@@ -3,16 +3,17 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    /* background-color: #4FEAAE; */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%; 
+    left: 0; 
 }
 header .logo{
     display: flex;
     align-items: center;
     padding-left: 10px;
     gap: 3px;
+    margin-top: 2px;
 }
 header .logo img{
     height: 20%;
@@ -26,6 +27,19 @@ header .logo h1{
 header .mode{
     padding-right: 20px;
     font-size: 1.5rem;
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+header .mode .cta-btn{
+    width: 70px;
+    padding: 8px 8px;
+     font-size: 16px;
+
 }
 .toggle-button{
     width: 30px;
@@ -45,15 +59,28 @@ header .mode{
     background-color: #000000;
     border-radius:15px ;
 }
-/* .navlink{
-    display: flex;
+.navlink{
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #0e4e40;
-} */
+    align-items: center; */
+    /* background-color: #0e4e40; */
+    /* position: absolute;
+    left: 500px ;
+     */
+     flex: 1;
+    
+}
 .navlink ul{
+    /* flex: 1; */
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.navlink ul.dark-mode{
+    background-color: #4f4f4f;
+    color: #fff;
 }
 .navlink a{
     text-decoration: none;
@@ -62,25 +89,6 @@ header .mode{
     font-size: 1.3rem;
     font-weight: 400;
    
-}
-header .log-in ul{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    color: #fff;
-}
-
-header .log-in {
-    margin-right: 3rem;
-    /* background-color: #000; */
-}
-header .log-in a:nth-child(1){
-    text-decoration: none;
-    color: #000;
-   padding: 10px;
-    font-size: 1rem;
-    font-weight: 600;
-
 }
 /* a.active {
     background-color: #444;
@@ -93,3 +101,4 @@ header .log-in a:nth-child(1){
 /* header div a:nth-child(2){
     padding: 10px;
 } */
+ 

@@ -23,6 +23,11 @@ body.dark-mode{
     border: none;
    
   }
+  header div.drak-mode{
+    background-color: #4f4f4f;
+    color: #fff;
+
+  }
   .cta-btn{
     background-color: #185403;
     width: 150px;
