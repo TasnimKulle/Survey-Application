@@ -21,6 +21,24 @@
   margin: auto;
   padding-inline: 0.5rem;
 }
+/* lg */
+@media (max-width: 1024px) {
+  header{
+    justify-content: center;
+  }
+  header .navlink{
+    background-color: red;
+    margin-right:150px;
+    margin-top: 8px;
+  }
+  header .navlink ul{
+    justify-content: center;
+    align-items: center;
+  }
+  header .navlink a{
+    padding-left: 10px;
+  }
+}
 /* md */
 @media (max-width: 768px) {
   header {
@@ -33,9 +51,10 @@
   .navlink {
     width: 100%;
     max-height: 0;
-    overflow:visible;
-    opacity: 1;
-    transition: max-height 0.5s ease-out, opacity 0.5s; 
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s;
+   
   }
   .navlink{
     flex-direction: column;
@@ -50,8 +69,9 @@
   header ul{
   flex-direction: column;
   width: 100%;
-  background-color: #cc8e8e;
+  background-color: #fff; 
   gap: 1rem;
+  margin-top: 5px;
  
  /* justify-content: center; */
  }
@@ -107,9 +127,12 @@
     position: absolute;
     top: 10px;
     right: 20px;
-    color: red;
+    margin-right: 10px;
+
   }
- 
+  header .logo{
+   width: 100%;
+  }
   .hero {
     flex-wrap: wrap;
     padding-bottom: 10px;

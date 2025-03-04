@@ -46,11 +46,12 @@ header .mode .cta-btn{
     height:21px;
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 15px;
     display: none;
    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 
 }
 .toggle-button .bar{
@@ -60,18 +61,10 @@ header .mode .cta-btn{
     border-radius:15px ;
 }
 .navlink{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    /* background-color: #0e4e40; */
-    /* position: absolute;
-    left: 500px ;
-     */
      flex: 1;
     
 }
 .navlink ul{
-    /* flex: 1; */
     display: flex;
     list-style: none;
     justify-content: center;
@@ -97,8 +90,5 @@ header .mode .cta-btn{
     padding: 0 15px;
     border-radius:10px ;
    
-} */
-/* header div a:nth-child(2){
-    padding: 10px;
 } */
  
