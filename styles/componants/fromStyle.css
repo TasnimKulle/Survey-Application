@@ -11,7 +11,7 @@ body{
     border: 1px solid #eee;
     border-radius:6px ; 
 }
-.logo{
+/* .logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 8px;
-}
+} */
 .accouns{
     display: flex;
     justify-content: flex-end;
