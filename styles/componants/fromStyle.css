@@ -45,7 +45,7 @@ padding-bottom:10px;
 line-height: 11px;
 font-weight: 500;
 }
-#logform #emali{
+#logform #emali ,#name{
     padding: 16px;
     width: 80%;
     border: 1px solid #d6d6d6;
@@ -54,6 +54,9 @@ font-weight: 500;
 
 }
 #logform #emali:hover{
+    border:1px solid #266e0a;
+}
+#logform #name:hover{
     border:1px solid #266e0a;
 }
 #logform a{
