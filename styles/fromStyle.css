@@ -1,25 +1,31 @@
 body{
     background-color: #F7F8FA;
 }
+
+.lglogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    left: 420px;
+    top: 20px; */
+    text-align: center;
+}
+.lglogin img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
 .loging{
-    width: 600px;
-    margin: 50px auto;
+    width: 500px;
+    margin: 10px auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
     border: 1px solid #eee;
     border-radius:6px ; 
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
+    /* margin-top: 20px; */
 }
 .accouns{
     display: flex;
@@ -93,3 +99,4 @@ font-weight: 500;
 .icons .fa-google{
     color:#EA4335;
 }
+
