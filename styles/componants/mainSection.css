@@ -50,3 +50,39 @@
 .over_veiw p{
     padding-left: 30px;
 }
+.sapp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    
+    justify-content: space-between;
+
+}
+.card_sa{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    
+}
+.card_sa span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card_sa span img{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #185403;
+    border-radius: 5px;
+}
+.card_sa p{
+    margin-left:25px;
+}
+.card_sa:hover{
+    background-color: #9bbd8f;
+    border-radius: 8px;
+
+}

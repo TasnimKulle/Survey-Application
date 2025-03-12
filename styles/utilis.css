@@ -97,6 +97,11 @@
   header.active .toggle-button .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
+  .sapp{
+    display: flex;
+    flex-wrap: wrap;
+   max-width: 100%;
+    }
 }
 /* sm */
 @media (max-width: 640px) {
@@ -120,6 +125,19 @@
   .main-section .hero-section img {
     max-width: 400px;
   }
+  .over_veiw{
+    max-width: 100%;
+  }
+  .card_sa{
+    max-width: 100%;
+    background-color: red;
+  }
+  .sapp{
+  display: flex;
+  flex-wrap: wrap;
+ max-width: 100%;
+  }
+
 }
 /* xs */
 @media (max-width: 475px) {
@@ -141,4 +159,8 @@
   img {
     width: 100%;
   }
+  .over_veiw{
+    max-width: 100%;
+  }
+ 
 }
