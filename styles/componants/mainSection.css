@@ -25,3 +25,28 @@
     border: 2px solid #185403;
     width: 650px;
 }
+/* products section */
+.over_veiw{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    padding:25px;
+    width: 800px;
+    margin: 50px auto;
+    border-radius: 8px;
+    gap: 5px;
+}
+.over_veiw span{
+    display: flex;
+    gap: 5px;
+    padding: 0;
+}
+
+.over_veiw span img{
+   width: 30PX;
+   height: 30px;
+   border-radius: 5px;
+}
+.over_veiw p{
+    padding-left: 30px;
+}
