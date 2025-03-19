@@ -6,9 +6,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    left: 420px;
-    top: 20px; */
     text-align: center;
 }
 .lglogin img{
@@ -16,10 +13,10 @@ body{
     height: 30px;
     border-radius: 8px;
 }
-.loging{
-    width: 500px;
+.auth-container{
+    width: 430px;
     margin: 10px auto;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
@@ -31,21 +28,17 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-#logform{
+#authForm{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    padding: 10px;
     font-style: italic;
+    justify-content: center;
+    align-items: center;
 }
-#logform label{
-padding-bottom:10px;
-/* font-size: 1rem; */
-line-height: 11px;
-font-weight: 500;
-}
-#logform #emali ,#name{
+/* #form-title{
+} */
+#authForm input{
     padding: 16px;
     width: 80%;
     border: 1px solid #d6d6d6;
@@ -53,24 +46,23 @@ font-weight: 500;
     margin-bottom: 8px;
 
 }
-#logform #emali:hover{
+#authForm input:hover{
     border:1px solid #266e0a;
 }
-#logform #name:hover{
-    border:1px solid #266e0a;
-}
-#logform a{
+
+#authButton{
     padding: 16px;
-    width: 80%;
+    width: 88%;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
     background-color:#1A5304 ;
     text-align: center;
     text-decoration: none;
     font-size: 1.3rem;
-    margin: 10px 0 ;
+    margin: 10px 25px ;
     color: #fff;
     font-weight: 600;
+    
 }
 #logform a:hover{
     background-color: #328f0d;
@@ -78,28 +70,5 @@ font-weight: 500;
 .athors{
     border-top: 1px solid #d6d6d6;
     margin-left: 30px;
-    padding: 10px;
-}
-.icons{
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-.icons span{
-    margin-top: 10px;
-}
-.icons i{
-    border: 1px solid #d6d6d6;
-    padding: 15px;
-    font-size: 2rem;
-    border-radius: 5px;
-}
-.icons .fa-facebook, .fa-linkedin{
-    color: #1977F3;
-}
-.icons .fa-google{
-    color:#EA4335;
 }
 

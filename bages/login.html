@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/componants/fromStyle.css">
 </head>
 <body>
-    <div class="containar">
+    <div class="container">
         <div class="logo lglogin">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oc1Z8_pN2GY1iAeksf4QAWFfpfLEpWilxQ&s"
@@ -16,42 +16,33 @@
             />
             <h1>SurvayApp</h1>
         </div>
-        <div class="loging">
-              <div class="accouns">
+        <div class="auth-container">
+              <div class="accouns" id="authSwitch">
                 Don’t have an account? 
-                <a href="ragistar.html">Sign up</a>
+                <a href="ragistar.html" id="switchForm">Sign up</a>
               </div>
               
-            <form id="logform">
-                <h1>Log in</h1>
-                <label for="emal">Email address</label> 
-                <input type="email" name="email" id="emali" placeholder="abcd23@gmail.com">  
-                 <a href="#">Next</a>
+            <form id="authForm">
+                <h1 id="form-title">Log in</h1>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="email" id="emali" placeholder="Enter Your Email" required>
+                <input type="password"  id="password" placeholder="Enter Your password" required>
+                <input type="password" id="confirmPassword" placeholder="confirm You password" >
             </form>
+            <button type="submit" id="authButton">Sign In</button>
             <div class="athors">
               <p>Or log in with</p>
-              <div class="icons">
-                <span>
-                  <i class="fa-brands fa-facebook"></i>
-                  <p>Facebook</p>
-                </span>
-              <span>
-
-                 <i class="fa-brands fa-google"></i>
-                 <p>Google</p>
-                </span>
-                <span>
-                  <i class="fa-brands fa-apple"></i>
-                  <p>Apple</p>
-                </span>
-             <span>
-              <i class="fa-brands fa-linkedin"></i>
-             <p> linkedIn</p>
-             </span>
-               </div>
+                 <!-- <i class="fa-brands fa-google"></i> -->
+                 <p>Sing In With Google</p>
             </div>
         </div>
     </div>
+    <!-- <div class="accouns">
+      Already have an account? 
+    <a href="login.html">Log in </a>
+  </div>
+  <h1>Create an account</h1>
+  <p>Or sign up with</p> -->
     
 </body>
 </html>
