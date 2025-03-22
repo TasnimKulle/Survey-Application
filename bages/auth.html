@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="/styles/componants/fromStyle.css">
+    <link rel="stylesheet" href="/styles/componants/auth_from.css">
 </head>
 <body>
     <div class="container">
@@ -19,15 +19,15 @@
         <div class="auth-container">
               <div class="accouns" id="authSwitch">
                 Don’t have an account? 
-                <a href="ragistar.html" id="switchForm">Sign up</a>
+                <a href="#" id="switchForm">Sign up</a>
               </div>
               
             <form id="authForm">
                 <h1 id="form-title">Log in</h1>
-                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="text" name="username" id="username" placeholder="Username" style="display: none;">
                 <input type="email" id="emali" placeholder="Enter Your Email" required>
                 <input type="password"  id="password" placeholder="Enter Your password" required>
-                <input type="password" id="confirmPassword" placeholder="confirm You password" >
+                <input type="password" id="confirmPassword" placeholder="confirm You password" style="display: none;" >
             </form>
             <button type="submit" id="authButton">Sign In</button>
             <div class="athors">
@@ -37,6 +37,7 @@
             </div>
         </div>
     </div>
+    <script src="/scripts/auth.js"></script>
     <!-- <div class="accouns">
       Already have an account? 
     <a href="login.html">Log in </a>
