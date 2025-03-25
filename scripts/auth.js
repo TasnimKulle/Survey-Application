@@ -1,11 +1,11 @@
 const authSwitch=document.querySelector('#authSwitch');
-const switchForm =document.querySelector('#siwtchForm');
+const switchForm =document.querySelector('#switchForm');
 const authForm=document.querySelector('#authForm');
 const formTitle=document.querySelector('#form-title')
 const email=document.querySelector('#email');
 const username=document.querySelector('#username');
 const password=document.querySelector('#password');
-const confirmPassword=document.querySelector('#confimPassword');
+const confirmPassword=document.querySelector('#confirmPassword');
 const authButton=document.querySelector('#authButton');
 
 let signIn = true;
