@@ -19,6 +19,7 @@ togglebtn.addEventListener("click", switchMode);
     const saveMode=this.localStorage.getItem("mode")
     if(saveMode==="dark"){
         this.document.body.classList.add("dark-mode")
+    
         togglebtn.classList.add("dark-mode")
         togglebtn.innerHTML=`<i class="fa-solid fa-sun"></i>`
     }else{

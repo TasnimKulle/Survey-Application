@@ -8,7 +8,7 @@ header{
     width: 100%; 
     left: 0; 
 }
-header .logo{
+.logo{
     display: flex;
     align-items: center;
     padding-left: 10px;
