@@ -5,18 +5,22 @@
     align-items: center;
     margin-top: 3rem;
     padding: 2rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 .main-section .hero-section h1{
     font-size: 3rem;
     font-weight: 400;
-    line-height: 54px;
-    
+    line-height: 11px;
+    margin-top: 20px;
+}
+.hero-section .small-taxt{
+    text-align: center;
 }
 
 .main-section .hero-section p{
     font-size: 1.125rem;
     font-weight: 400;
+    line-height: 15px;
 }
 /* .main-section .hero-section p .pcenter{
     text-align: center;
@@ -54,7 +58,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
-    
     justify-content: space-between;
 
 }
