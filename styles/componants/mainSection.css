@@ -63,6 +63,7 @@
     width: 500px;
     margin: 10px auto;
     padding: 20px;
+    background-color: #f5f4f4;
     
 }
 .card_sa span {
@@ -107,6 +108,39 @@
     line-height:1.5rem ;
     text-align: center;
   }
+  .over_veiw{
+    width: 750px;
+  }
+  .over_veiw p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 5px;
+  }
+  .sapp{
+    gap: 10px;
+    padding-right: 20px;
+  }
+  .card_sa{
+   width: 380px;
+    margin: 10px auto;
+    padding: 20px;
+   
+
+  }
+  .card_sa h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .card_sa p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 5px;
+    
+  }
   
 
 }
@@ -116,12 +150,6 @@
     .main-section{
         max-width: 100%;
       }
-      .sapp{
-        display: flex;
-        flex-wrap: wrap;
-       max-width: 100%;
-        }
-    
         .hero-section{
           max-width: 100%;
           /* background-color: #45df03; */
@@ -134,7 +162,34 @@
           margin-top: 20px;
           max-width: 1000px;
         }
-        
+        .sapp{
+          max-width: 100%;
+          gap: 10px;
+          
+        }
+        .card_sa{
+         width: 380px;
+          margin: 10px auto;
+          padding: 20px;
+          border-radius: 8px;
+      
+        }
+        .card_sa h3{
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2rem;
+          text-align: center;
+        }
+        .card_sa p{
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          padding: 5px;
+          
+        }
+        .over_veiw{
+          width: 750px;
+        }      
 
 }
 
@@ -169,11 +224,10 @@
       .sapp{
         display: flex;
         flex-direction: column;
-        background-color: #ffff7b;
         }
       .card_sa{
-        max-width: 100%;
-        background-color: red;
+        width: 100%;
+      
       }
 }
 
@@ -205,6 +259,7 @@
       .sapp{
         display: flex;
         flex-direction: column;
-        /* background-color: #ffff7b; */
+        max-width: 100%;
+        
         }
 }

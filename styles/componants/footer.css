@@ -55,6 +55,24 @@ footer{
     padding-bottom:10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
 }
+/* lg */
+@media (max-width: 1024px) {
+    .footer-title p{
+        font-size: 1.2rem;
+        margin-top: 5px;
+        padding: 5px 10px;
+        line-height: 1.5rem;
+       
+    }
+    .contact-us h2{
+        font-size: 2rem;
+    }
+    .contact-us p{
+        font-size:1rem;
+        line-height: 1.5rem;
+    }
+
+}
 /* sm */
 @media (max-width: 640px) {
     .footer-section{
@@ -69,20 +87,30 @@ footer{
         height: 30px;
     }
     .footer-title p{
-        font-size: 12px;
+        font-size: 1.2rem;
         margin-top: 5px;
         padding: 5px 10px;
-        line-height: 14px;
+        line-height: 1.5rem;
+       
     }
     .contact-us h2{
-        font-size: 16px;
+        font-size: 2rem;
     }
     .contact-us p{
-        font-size: 12px;
+        font-size:1rem;
+        line-height: 1.5rem;
     }
     .follow-us span i{
-        font-size: 16px;
+        font-size: 1.5rem;
         padding-right: 10px;
+    }
+    .follow-us h2{
+        font-size: 2.3rem;
+    }
+    footer p{
+        font-size: 1.1rem;
+        line-height: 1rem;
+        font-weight: 500;
     }
 }
 
