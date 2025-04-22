@@ -1,0 +1,63 @@
+{
+    "survey_title": "Telecommunication Infrastructure and Services Survey in Somalia",
+    "description": "This survey aims to collect information about the current state of telecommunication services, challenges, and user experiences in Somalia. Your responses will help improve telecommunication services in the country.",
+    "questions": [
+      {
+        "id": 1,
+        "type": "text",
+        "question": "What is your age?"
+      },
+      {
+        "id": 2,
+        "type": "single_choice",
+        "question": "What is your gender?",
+        "options": ["Male", "Female", "Prefer not to say"]
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "question": "Which city or region do you live in?"
+      },
+      {
+        "id": 4,
+        "type": "single_choice",
+        "question": "Which telecommunication provider do you currently use?",
+        "options": ["Hormuud", "Somtel", "Nationlink", "Golis", "Other"]
+      },
+      {
+        "id": 5,
+        "type": "multiple_choice",
+        "question": "What telecommunication services do you use regularly?",
+        "options": ["Mobile Calls", "Internet/Data", "Mobile Money", "SMS", "International Calls"]
+      },
+      {
+        "id": 6,
+        "type": "rating",
+        "question": "How would you rate the quality of telecommunication services in your area?",
+        "scale": 5,
+        "labels": ["Very Poor", "Poor", "Average", "Good", "Excellent"]
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "question": "What challenges do you face with telecommunication services?"
+      },
+      {
+        "id": 8,
+        "type": "single_choice",
+        "question": "Are telecommunication services affordable for you?",
+        "options": ["Yes", "No", "Sometimes"]
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "question": "What improvements would you like to see in telecommunication services in Somalia?"
+      },
+      {
+        "id": 10,
+        "type": "yes_no",
+        "question": "Would you support government and private sector initiatives to expand telecommunication infrastructure?"
+      }
+    ]
+  }
+  

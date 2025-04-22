@@ -8,10 +8,11 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   />
-  <link rel="stylesheet" href="/styles/componants/hearder.css" />
+  <!-- <link rel="stylesheet" href="/styles/componants/hearder.css" /> -->
   <!-- <link rel="stylesheet" href="/styles/global.css" />
   <link rel="stylesheet" href="/styles/utilis.css" /> -->
   <link rel="stylesheet" href="/styles/componants/survey.css" />
+
 </head>
 <body>
    <header>
@@ -22,24 +23,35 @@
         />
         <h1>SurvayApp</h1>
       </div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
       <div class="navlink">
         <ul>
          <li><a href="#">Questions</a></li>
          <li><a href="#">Responses</a></li>
         </ul>
       </div>
-      <div class="mode">
-        <p class="mode-toggle"></p>
-      </div>
-      <div class="useracount">
-        <p id="username"></p>
-        <p id="email"></p>
+      <div class="profile-box">
+        <div class="profile-menu">
+         
+            <i class="fa-solid fa-user" onclick="toggleDropdown()"></i>
+         
+          <div id="profileDropdown" class="dropdown-content">
+            <p id="username"></p>
+            <p id="email"></p>
+            <button onclick="logout()">Logout</button>
+          </div>
+        </div>
       </div>
    </header>
+
+   <div class="container">
+    <h1 id="surveyTitle"></h1>
+    <p id="surveyDescription"></p>
+    <form id="surveyForm"></form>
+    <button onclick="submitSurvey()">Submit Survey</button>
+  </div>
+   <div class="results">
+    
+   </div>
+   <script src="/scripts/useronline.js"></script>
 </body>
 </html>
