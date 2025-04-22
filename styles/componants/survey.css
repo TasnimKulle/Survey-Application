@@ -91,3 +91,96 @@ header .navlink ul li a {
 .dropdown-content button:hover {
   background-color: #028226a4;
 }
+.container{
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+
+}
+.container #surveyTitle{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a5304;
+  text-align: center;
+  line-height: 2rem;
+}
+.container #surveyDescription{
+  line-height: 1.5rem;
+  text-align:justify;
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 25px;
+}
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  display: block;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  margin-left: 0;
+  margin-top: 12px;
+  /* transform: scale(1.1); */
+}
+/* small {
+  color: #555;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+} */
+button {
+  width: 100%;
+  background: #1a5304;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #138100;
+}
+/* Group radio and checkboxes inline by using margin */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: block;
+  margin-left: 26px;
+  margin-top: -24px;
+  font-weight: normal;
+}
