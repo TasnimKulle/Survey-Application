@@ -108,24 +108,15 @@ form.addEventListener("submit", (e) => {
   const data = Object.fromEntries(formData.entries());
   console.log("data is ",data);
   console.log("fdata is",formData)
-  showToast("Survey submitted successfully!")
+// message show successfully as anthor page
+  window.location.href = "/pages/thankyou.html"; // Redirect to thank you page
   // Clear the input field after submission 
   form.reset();
   savedSarveyData(data) // Reset the form to clear all fields
-  // You can send the data to your server or process it as needed
-})
-// popup toast message show successfully 
-function showToast(message) {
-  const toast = document.getElementById('toast');
-  toast.textContent = message;
-  toast.classList.remove('hidden');
-  toast.classList.add('show');
 
-  setTimeout(() => {
-    toast.classList.remove('show');
-    toast.classList.add('hidden');
-  }, 3000); // Hide after 3 seconds
-}
+})
+
+
 // surveyData saved in local storage
 function savedSarveyData(data){
   const surveyData = JSON.parse(localStorage.getItem("surveyData"))|| [];
