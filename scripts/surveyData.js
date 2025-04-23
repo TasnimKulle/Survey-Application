@@ -1,4 +1,5 @@
-const url = "/scripts/data.json";
+window.onload = function () {
+  const url = "/scripts/data.json";
 async function fetchSurveyData() {
   try {
     const response = await fetch(url);
@@ -14,15 +15,18 @@ async function fetchSurveyData() {
 }
 fetchSurveyData();
 
+}
+
+const form = document.getElementById("surveyForm");
 function displaySurveyData(surveyData) {
-  let { questions } = surveyData;
+  let {questions} = surveyData;
   const surveyTitle = document.getElementById("surveyTitle");
   const surveyDescription = document.getElementById("surveyDescription");
   surveyTitle.innerHTML = surveyData.survey_title;
   surveyDescription.innerHTML = surveyData.description;
 
   // fromka diyarintisa
-  const form = document.getElementById("surveyForm");
+ 
 
   surveyData.questions.forEach((q) => {
     const Label = document.createElement("label");
@@ -89,6 +93,54 @@ function displaySurveyData(surveyData) {
     form.appendChild(br);
     console.log(q);
     console.log(form);
+    
   });
-  
+  const submitButton = document.createElement("button");
+  submitButton.type = "submit";
+  submitButton.id = "submitButton";
+  submitButton.innerHTML = "Submit Survey";
+  form.appendChild(submitButton);
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  console.log("data is ",data);
+  console.log("fdata is",formData)
+  showToast("Survey submitted successfully!")
+  // Clear the input field after submission 
+  form.reset();
+  savedSarveyData(data) // Reset the form to clear all fields
+  // You can send the data to your server or process it as needed
+})
+// popup toast message show successfully 
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.remove('hidden');
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    toast.classList.add('hidden');
+  }, 3000); // Hide after 3 seconds
+}
+// surveyData saved in local storage
+function savedSarveyData(data){
+  const surveyData = JSON.parse(localStorage.getItem("surveyData"))|| [];
+  surveyData.push(data);
+  localStorage.setItem("surveyData",JSON.stringify(surveyData))
+  console.log("survey data is",surveyData)
+}
+
+
+// surveyData saved in local storage
+// function getSavedSurveyData(){
+//   const surveyData = JSON.parse(localStorage.getItem("surveyData"))|| [];
+//   console.log("saved survey data is",surveyData)
+//   return surveyData
+// }
+// getSavedSurveyData() 
+
+

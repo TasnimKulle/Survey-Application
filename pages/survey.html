@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UserAccount</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  />
-  <!-- <link rel="stylesheet" href="/styles/componants/hearder.css" /> -->
-  <!-- <link rel="stylesheet" href="/styles/global.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/styles/componants/hearder.css" /> -->
+    <!-- <link rel="stylesheet" href="/styles/global.css" />
   <link rel="stylesheet" href="/styles/utilis.css" /> -->
-  <link rel="stylesheet" href="/styles/componants/survey.css" />
-
-</head>
-<body>
-   <header>
-     <div class="logo">
+    <link rel="stylesheet" href="/styles/componants/survey.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oc1Z8_pN2GY1iAeksf4QAWFfpfLEpWilxQ&s"
           alt="logo image"
@@ -25,15 +24,14 @@
       </div>
       <div class="navlink">
         <ul>
-         <li><a href="#">Questions</a></li>
-         <li><a href="#">Responses</a></li>
+          <li><a href="#">Questions</a></li>
+          <li><a href="#">Responses</a></li>
         </ul>
       </div>
       <div class="profile-box">
         <div class="profile-menu">
-         
-            <i class="fa-solid fa-user" onclick="toggleDropdown()"></i>
-         
+          <i class="fa-solid fa-user" onclick="toggleDropdown()"></i>
+
           <div id="profileDropdown" class="dropdown-content">
             <p id="username"></p>
             <p id="email"></p>
@@ -41,19 +39,19 @@
           </div>
         </div>
       </div>
-   </header>
+    </header>
 
-   <div class="container">
-    <h1 id="surveyTitle"></h1>
-    <p id="surveyDescription"></p>
-    <form id="surveyForm"></form>
-    <button onclick="submitSurvey()">Submit Survey</button>
-  </div>
-   <div class="results">
-    
-   </div>
-   <script src="/scripts/useronline.js"></script>
-   <script src="/scripts/surveyData.js"></script>
+    <div class="container">
+      <div>
+        <h1 id="surveyTitle"></h1>
+        <p id="surveyDescription"></p>
+      </div>
 
-</body>
+      <form id="surveyForm"></form>
+      
+    </div>
+    <div class="results"></div>
+    <script src="/scripts/useronline.js"></script>
+    <script src="/scripts/surveyData.js"></script>
+  </body>
 </html>

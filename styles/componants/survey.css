@@ -17,15 +17,15 @@ header .logo {
   align-items: center;
 }
 header .logo img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid #fff;
   padding: 2px;
 }
 header .logo h1 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
   margin-left: 5px;
@@ -39,7 +39,7 @@ header .navlink ul {
 header .navlink ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .profile-box {
@@ -93,18 +93,26 @@ header .navlink ul li a {
 }
 .container{
   width: 700px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   background-color: #fff;
+  
 
+}
+.container div{
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #1a5304;
+  color: #fff;
 }
 .container #surveyTitle{
   font-size: 2rem;
   font-weight: 600;
-  color: #1a5304;
+  color: #fff;
   text-align: center;
   line-height: 2rem;
 }
@@ -119,8 +127,7 @@ form {
   margin: 0 auto;
   background: #ffffff;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  
 }
 h2 {
   text-align: center;
@@ -149,12 +156,6 @@ input[type="checkbox"] {
   margin-top: 12px;
   /* transform: scale(1.1); */
 }
-/* small {
-  color: #555;
-  font-size: 12px;
-  display: block;
-  margin-top: 5px;
-} */
 button {
   width: 100%;
   background: #1a5304;
@@ -170,11 +171,12 @@ button {
 button:hover {
   background: #138100;
 }
-/* Group radio and checkboxes inline by using margin */
+
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 8px;
   margin-top: 8px;
+  
 }
 
 input[type="radio"] + label,
@@ -183,4 +185,118 @@ input[type="checkbox"] + label {
   margin-left: 26px;
   margin-top: -24px;
   font-weight: normal;
+}
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  header .navlink ul {
+    gap: 10px;
+  }
+  header .navlink ul li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding-left: 5px;
+  }
+  header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+ 
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+}
+  .container div {
+    padding: 10px;
+    
+  }       
+  .container #surveyTitle {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .container #surveyDescription {
+    font-size:1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  label {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  input[type="text"],
+  input[type="number"] {
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+    
+  }
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+@media (max-width: 475px) {
+  header .navlink ul {
+    gap: 5px;
+  }
+  header .navlink ul li a {
+    font-size: 1rem;
+  }
+  header .logo h1 {
+    font-size:0.9rem;
+  }
+  header .logo img {
+    width: 20px;
+    height: 20px;
+  }
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  .container div {
+    padding: 10px;
+  }
+  .container #surveyTitle {
+    font-size: 1.5rem;
+    line-height: 1.8rem;}
+  .container #surveyDescription {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  form {
+    padding: 15px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+  }
+  input[type="text"],
+  input[type="number"] {
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+    
+  }
+  .profile-menu .fa-user {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .profile-menu .dropdown-content {
+    min-width: 150px;
+  }
 }
