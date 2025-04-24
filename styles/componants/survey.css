@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a5304;
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+header .logo h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 5px;
+}
+header .navlink ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header .navlink ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.profile-box {
+  position: relative;
+}
+
+.fa-user {
+  
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+    font-size: 2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+    text-align: center;
+
+}
+
+.dropdown-content p {
+    margin: 8px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dropdown-content button {
+  background-color: #1a5304;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+
+.dropdown-content button:hover {
+  background-color: #028226a4;
+}
+.container{
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  
+
+}
+.container div{
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #1a5304;
+  color: #fff;
+}
+.container #surveyTitle{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+}
+.container #surveyDescription{
+  line-height: 1.5rem;
+  text-align:justify;
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  
+}
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 25px;
+}
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  display: block;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  margin-left: 0;
+  margin-top: 12px;
+  /* transform: scale(1.1); */
+}
+button {
+  width: 100%;
+  background: #1a5304;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #138100;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 8px;
+  
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: block;
+  margin-left: 26px;
+  margin-top: -24px;
+  font-weight: normal;
+}
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  header .navlink ul {
+    gap: 10px;
+  }
+  header .navlink ul li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding-left: 5px;
+  }
+  header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+ 
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+}
+  .container div {
+    padding: 10px;
+    
+  }       
+  .container #surveyTitle {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .container #surveyDescription {
+    font-size:1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  label {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  input[type="text"],
+  input[type="number"] {
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+    
+  }
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+@media (max-width: 475px) {
+  header .navlink ul {
+    gap: 5px;
+  }
+  header .navlink ul li a {
+    font-size: 1rem;
+  }
+  header .logo h1 {
+    font-size:0.9rem;
+  }
+  header .logo img {
+    width: 20px;
+    height: 20px;
+  }
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  .container div {
+    padding: 10px;
+  }
+  .container #surveyTitle {
+    font-size: 1.5rem;
+    line-height: 1.8rem;}
+  .container #surveyDescription {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  form {
+    padding: 15px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+  }
+  input[type="text"],
+  input[type="number"] {
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+    
+  }
+  .profile-menu .fa-user {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .profile-menu .dropdown-content {
+    min-width: 150px;
+  }
+}

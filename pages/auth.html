@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/componants/auth_from.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo lglogin">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oc1Z8_pN2GY1iAeksf4QAWFfpfLEpWilxQ&s"
+              alt="logo image"
+            />
+            <h1>SurvayApp</h1>
+        </div>
+        <div class="auth-container">
+              <div class="accouns" id="authSwitch">
+                Don’t have an account? 
+                <a href="#" id="switchForm">Sign up</a>
+              </div>
+              
+            <form id="authForm">
+                <h1 id="form-title">Sign In</h1>
+                <input type="text" name="username" id="username" placeholder="Username" style="display: none;">
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <input type="password"  id="password" placeholder="Enter Your password" required>
+                <input type="password" id="confirmPassword" placeholder="confirm You password" style="display: none;" >
+                <button type="submit" id="authButton">Sign In</button>
+            </form>
+            
+            <!-- <div class="athors">
+              <p>Or log in with</p> -->
+                 <!-- <i class="fa-brands fa-google"></i> -->
+                 <!-- <p>Sing In With Google</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="/scripts/auth.js"></script>  
+</body>
+</html>
