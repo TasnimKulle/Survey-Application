@@ -125,13 +125,3 @@ function savedSarveyData(data){
   console.log("survey data is",surveyData)
 }
 
-
-// surveyData saved in local storage
-// function getSavedSurveyData(){
-//   const surveyData = JSON.parse(localStorage.getItem("surveyData"))|| [];
-//   console.log("saved survey data is",surveyData)
-//   return surveyData
-// }
-// getSavedSurveyData() 
-
-
