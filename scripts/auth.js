@@ -86,3 +86,19 @@ function switchAuthFrom(){
 
     }
 }
+//  document.addEventListener('DOMContentLoaded', function() { 
+    
+// //Tusaale ahaan user-ka login-galay
+// const user = {
+//     username: "tasnim",
+//     email: "tasnim12@gmail.com",
+//     role: "admin" // ama "user"
+//   };
+  
+//   // Keydi user-ka sida "OnlineUsers"
+//   localStorage.setItem("OnlineUsers", JSON.stringify(user));
+  
+//   // Ku dir page-ka hore
+//   window.location.href = "/pages/auth.html";
+
+//  })

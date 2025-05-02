@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/styles/admin.css">
+    
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+    <main class="dashboard-container">
+      <section class="summary-box">
+        <h2>Summary</h2>
+        <p>Total Registered Users: <span id="userCount">0</span></p>
+        <p>Total Responses: <span id="responseCount">0</span></p>
+      </section>
+      <h2>Survey Analytics</h2>
+      <section class="chart-box">
+        
+        <div>
+          <h3>Gender Distribution</h3>
+          <div id="genderChart" class="chart-bar"></div>
+        </div>
+        <div>
+          <h3>Telecom Providers</h3>
+          <div id="providerChart" class="chart-bar"></div>
+        </div>
+        <div>
+          <h3>Service Rating</h3>
+          <div id="ratingChart" class="chart-bar"></div>
+        </div>
+        <div>
+          <h3>Affordability</h3>
+          <div id="affordableChart" class="chart-bar"></div>
+        </div>
+      </section>
+      
+      <h2>Text Responses</h2>
+      <section class="text-responses">
+       
+        <div>
+          <h3>Challenges</h3>
+          <input type="text" id="challengeSearch" placeholder="Search challenges..." />
+          <ul id="challengesList"></ul>
+        </div>
+        <div>
+          <h3>Improvements</h3>
+          <input type="text" id="improvementSearch" placeholder="Search improvements..." />
+          <ul id="improvementsList"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/scripts/admin.js"></script>
+
+   
+  </body>
+</html>
