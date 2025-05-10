@@ -38,13 +38,20 @@ body{
 }
 /* #form-title{
 } */
-#authForm input{
+#authForm input {
     padding: 16px;
     width: 80%;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
     margin-bottom: 8px;
 
+}
+#authForm select{
+    padding: 16px;
+    width: 88%;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-bottom: 8px;
 }
 #authForm input:hover{
     border:1px solid #266e0a;

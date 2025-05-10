@@ -7,6 +7,8 @@ const username=document.querySelector('#username');
 const password=document.querySelector('#password');
 const confirmPassword=document.querySelector('#confirmPassword');
 const authButton=document.querySelector('#authButton');
+const userType=document.getElementById('users')
+const Options=document.getElementsByTagName('option')
 // console.log(authSwitch)
 
 let signIn = true;
@@ -25,12 +27,14 @@ authForm.addEventListener('submit',(e)=>{
     const user={
         username: signIn ? undefined : username.value,
         email: email.value,
-        password:password.value
+        password:password.value,
+        userType: userType.value,
+
     };
     console.log("hello",user)
    if(signIn){
     const users=JSON.parse(localStorage.getItem("users")) || [];
-    const existingUser=users.find((user)=>user.email === email.value && user.password === password.value)
+    const existingUser=users.find((user)=>user.email === email.value && user.password === password.value && user.userType === userType.value)
     if(existingUser){
      localStorage.setItem('OnlineUsers',JSON.stringify(existingUser))
      window.location.href='/pages/survey.html';
@@ -50,13 +54,13 @@ authForm.addEventListener('submit',(e)=>{
     if(confirmPassword.value !== password.value){
         alert("Password Mismatch")
         return
-       }
+       } 
     users.push(user)
     localStorage.setItem("users",JSON.stringify(users))
     alert("Ragestared Seccessfully")
     switchAuthFrom()
    }
-  
+    
    
 })
 
@@ -73,6 +77,11 @@ function switchAuthFrom(){
         email.value='';
         password.value='';
         confirmPassword.value='';  
+        userType.style.display='none';
+        // Options.style.display='none';
+        userType.value='';
+        Options.value='';
+
         console.log("helo")
     }else{
         authSwitch.innerHTML=`Already have an account? 
@@ -81,24 +90,10 @@ function switchAuthFrom(){
         authButton.textContent='Sign Up'
         username.style.display='block';
         confirmPassword.style.display='block'
+        userType.style.display='block';
+        // Options.style.display='block';
         
         // console.log("helo1")
 
     }
 }
-//  document.addEventListener('DOMContentLoaded', function() { 
-    
-// //Tusaale ahaan user-ka login-galay
-// const user = {
-//     username: "tasnim",
-//     email: "tasnim12@gmail.com",
-//     role: "admin" // ama "user"
-//   };
-  
-//   // Keydi user-ka sida "OnlineUsers"
-//   localStorage.setItem("OnlineUsers", JSON.stringify(user));
-  
-//   // Ku dir page-ka hore
-//   window.location.href = "/pages/auth.html";
-
-//  })

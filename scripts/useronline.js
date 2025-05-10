@@ -6,26 +6,24 @@ const user = JSON.parse(localStorage.getItem("OnlineUsers"));
 
 if (!user) {
   window.location.href = 'pages/auth.html';
-} else {
+}
+else {
   document.getElementById("username").textContent = `${user.username || 'N/A'}`;
   document.getElementById("email").textContent = `${user.email}`;
+  document.getElementById("userType").textContent = `${user.userType || 'N/A'}`;
 }
 
 function logout() {
   localStorage.removeItem("OnlineUsers");
   window.location.href = '/pages/auth.html';
 }
-const adminLink = document.getElementById("adminLink");
-  if(user.role !== "admin"){
-    adminLink.style.display = "none";
-  }else{
-    adminLink.style.display = "block";
-  }
+
 
 // admin role check
 const currentUser = {
   username:"tasnim",
   email: "tasnim12@gmail.com",
+  password: "12",
   role: "admin" 
 }
 localStorage.setItem("currentUser", JSON.stringify(currentUser));
@@ -33,7 +31,7 @@ localStorage.setItem("currentUser", JSON.stringify(currentUser));
 document.addEventListener("DOMContentLoaded", function(){
   const currentUserData = JSON.parse(localStorage.getItem("currentUser"));
  
-  if(!currentUserData || currentUserData.role !== "admin"){
+  if(!currentUserData || currentUserData.role !== "admin"){ 
     window.location.href = '/pages/auth.html';
   }
   // not admin 
