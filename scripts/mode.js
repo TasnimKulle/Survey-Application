@@ -3,6 +3,7 @@ togglebtn.addEventListener("click", switchMode);
 
  function switchMode(){
     document.body.classList.toggle("dark-mode");
+    document.querySelector(".navlink").classList.toggle("dark-mode")
     togglebtn.classList.toggle("dark-mode");
     
     if(document.body.classList.contains("dark-mode")){
@@ -19,6 +20,7 @@ togglebtn.addEventListener("click", switchMode);
     const saveMode=this.localStorage.getItem("mode")
     if(saveMode==="dark"){
         this.document.body.classList.add("dark-mode")
+        this.document.querySelector(".navlink").classList.add("dark-mode")
     
         togglebtn.classList.add("dark-mode")
         togglebtn.innerHTML=`<i class="fa-solid fa-sun"></i>`

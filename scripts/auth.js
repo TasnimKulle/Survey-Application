@@ -28,13 +28,14 @@ authForm.addEventListener('submit',(e)=>{
         username: signIn ? undefined : username.value,
         email: email.value,
         password:password.value,
-        userType: userType.value,
+        // userType: userType.value,
 
     };
     console.log("hello",user)
    if(signIn){
     const users=JSON.parse(localStorage.getItem("users")) || [];
-    const existingUser=users.find((user)=>user.email === email.value && user.password === password.value && user.userType === userType.value)
+    const existingUser=users.find((user)=>user.email === email.value && user.password === password.value )
+    // && user.userType === userType.value
     if(existingUser){
      localStorage.setItem('OnlineUsers',JSON.stringify(existingUser))
      window.location.href='/pages/survey.html';
@@ -77,10 +78,10 @@ function switchAuthFrom(){
         email.value='';
         password.value='';
         confirmPassword.value='';  
-        userType.style.display='none';
-        // Options.style.display='none';
-        userType.value='';
-        Options.value='';
+        // userType.style.display='none';
+        // // Options.style.display='none';
+        // userType.value='';
+        // Options.value='';
 
         console.log("helo")
     }else{
@@ -90,7 +91,7 @@ function switchAuthFrom(){
         authButton.textContent='Sign Up'
         username.style.display='block';
         confirmPassword.style.display='block'
-        userType.style.display='block';
+        // userType.style.display='block';
         // Options.style.display='block';
         
         // console.log("helo1")
