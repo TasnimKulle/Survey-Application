@@ -6,9 +6,12 @@ This is a simple and responsive **Survey Application** built using **HTML**, **C
 
 - Interactive survey interface
 - Clean and responsive design
-- Dynamically loaded questions using a local API
+- Home page with introductory information about the survey
+- User registration system before accessing the survey
+- Ensures that each user submits their own answers only once
+- Dynamically loaded questions using a local API (JSON)
 - Vanilla JavaScript for DOM manipulation and logic
-- Basic client-side validation
+- Basic client-side validation to improve input accuracy
 
 ## 🛠️ Technologies Used
 
