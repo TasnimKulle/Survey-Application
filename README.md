@@ -21,7 +21,6 @@ This is a simple and responsive **Survey Application** built using **HTML**, **C
 - **Local API (JSON)** – to store and serve survey questions
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 You can explore the full source code and view a live demo below:
 
