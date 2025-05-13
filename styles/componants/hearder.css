@@ -1,0 +1,94 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    left: 0; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 3px;
+    margin-top: 2px;
+}
+header .logo img{
+    height: 20%;
+    max-width:10%;
+    border-radius: 50%;
+}
+header .logo h1{
+    font-size: 1.5rem;
+    line-height: 11px;
+}
+header .mode{
+    padding-right: 20px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+header .mode .cta-btn{
+    width: 70px;
+    padding: 8px 8px;
+     font-size: 16px;
+
+}
+.toggle-button{
+    width: 30px;
+    height:21px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius:15px ;
+}
+.navlink{
+     flex: 1;
+    
+}
+.navlink ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.navlink ul.dark-mode{
+    background-color: #4f4f4f;
+    color: #fff;
+}
+.navlink a{
+    text-decoration: none;
+    color: #000;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-weight: 400;
+   
+}
+/* a.active {
+    background-color: #444;
+    color: #fff;
+    margin: 5px 0;
+    padding: 0 15px;
+    border-radius:10px ;
+   
+} */
+ 

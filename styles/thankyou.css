@@ -1,0 +1,90 @@
+
+.toast{
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(23, 23, 23, 0.1);
+    background-color: #1a5304;
+    color: #fff;
+    border-radius: 8px;   
+}
+.toast .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7cdd3e;
+    padding: 2px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.toast .content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+
+    
+}
+.toast .content h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 2.5rem;
+    
+}
+.toast .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.toast .content .ball{
+    width: 20px;
+    height: 20px;
+    background-color: #7cdd3e;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: bounce 3s infinite alternate;
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+/* xs */
+@media (max-width: 475px){
+    .toast{
+        width: 90%;
+        padding: 10px;
+    }
+    .toast .logo img{
+        width: 30px;
+        height: 30px;
+    }
+    .toast .content h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .toast .content p{
+        font-size: 1.2rem;
+    }
+    .toast .content .ball{
+        width: 15px;
+        height: 15px;
+        font-size: 2rem;
+    }
+    .toast .content .ball:hover{
+        animation: none;
+    }
+}

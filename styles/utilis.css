@@ -1,0 +1,130 @@
+/* 2xl */
+/* @media (max-width: 1400px) {} */
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* md */
+/* @media (max-width: 768px) {} */
+
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+/* @media (max-width: 475px) {} */
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-inline: 0.5rem;
+}
+/* lg */
+@media (max-width: 1024px) {
+  header{
+    justify-content: center;
+  }
+  header .navlink{
+    background-color: red;
+    margin-right:150px;
+    margin-top: 8px;
+  }
+  header .navlink ul{
+    justify-content: center;
+    align-items: center;
+  }
+  header .navlink a{
+    padding-left: 10px;
+  }
+  .container{
+    max-width: 768px
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navlink {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s;
+   
+  }
+  .navlink{
+    flex-direction: column;
+    width: 100%;
+  }
+  .navlink .log-in ul{
+    flex-direction: column;
+    gap: 1rem;
+   padding-top: 5px;
+    
+  }
+  header ul{
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff; 
+  gap: 1rem;
+  margin-top: 5px;
+ 
+ /* justify-content: center; */
+ }
+ 
+ header ul li{
+  text-align: center;
+ }
+ header ul li a{
+  padding: 18px;
+  line-height: 20px;
+ }
+  header.active .navlink{
+    max-height: 300px;
+    opacity: 1;
+
+  }
+  header.active .toggle-button .bar:nth-child(2){
+    opacity: 0;
+  } 
+  header.active .toggle-button .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+  }
+  header.active .toggle-button .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+}
+/* sm */
+@media (max-width: 640px) {
+  .container{
+    padding-inline: 0.5rem;
+    max-width: 100%;
+  }
+ 
+}
+/* xs */
+@media (max-width: 475px) {
+  .hero {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+  header .mode{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    margin-right: 10px;
+
+  }
+  header .logo{
+   width: 100%;
+  } 
+}
